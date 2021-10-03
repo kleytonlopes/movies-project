@@ -26,3 +26,19 @@ extension Movie: Decodable {
         case releaseDate = "release_date"
     }
 }
+
+extension Movie {
+    var subtitle: String {
+        return "\(releaseYear)"
+    }
+    var releaseYear: Int {
+        let date = releaseDate.flatMap { Movie.dateFormatter.date(from: $0) } ?? Date()
+        return Calendar.current.component(.year, from: date)
+    }
+
+    private static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
+}
