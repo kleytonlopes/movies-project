@@ -14,10 +14,10 @@ struct MovieViewModel {
     let title: String
     let subtitle: String
     let overview: String
-    let poster: AnyPublisher<UIImage?, Never>
+    let poster: AnyPublisher<UIImage?, Never>?
     let rating: String
 
-    init(id: Int, title: String, subtitle: String, overview: String, poster: AnyPublisher<UIImage?, Never>, rating: String) {
+    init(id: Int, title: String, subtitle: String, overview: String, poster: AnyPublisher<UIImage?, Never>? = nil, rating: String) {
         self.id = id
         self.title = title
         self.subtitle = subtitle
@@ -34,5 +34,15 @@ extension MovieViewModel: Hashable {
 
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
+    }
+}
+
+struct MovieViewModelBuilder {
+    static func viewModel(from movie: Movie) -> MovieViewModel {
+        return MovieViewModel(id: movie.id,
+                              title: movie.title,
+                              subtitle: movie.subtitle,
+                              overview: movie.overview,
+                              rating: String(format: "%.2f", movie.voteAverage))
     }
 }
