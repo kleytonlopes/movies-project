@@ -15,6 +15,8 @@
 		0642D4232709F9A80095DAD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0642D4212709F9A80095DAD4 /* LaunchScreen.storyboard */; };
 		0642D42E2709F9A90095DAD4 /* MoviesProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D42D2709F9A90095DAD4 /* MoviesProjectTests.swift */; };
 		0642D4392709F9A90095DAD4 /* MoviesProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D4382709F9A90095DAD4 /* MoviesProjectUITests.swift */; };
+		0642D44B270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D44A270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift */; };
+		0642D44F270A068D0095DAD4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D44E270A068D0095DAD4 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0642D4342709F9A90095DAD4 /* MoviesProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0642D4382709F9A90095DAD4 /* MoviesProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesProjectUITests.swift; sourceTree = "<group>"; };
 		0642D43A2709F9A90095DAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0642D44A270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCaseProtocol.swift; sourceTree = "<group>"; };
+		0642D44E270A068D0095DAD4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		0642D4152709F9A50095DAD4 /* MoviesProject */ = {
 			isa = PBXGroup;
 			children = (
+				0642D450270A10BC0095DAD4 /* Services */,
+				0642D44C270A05340095DAD4 /* Utils */,
 				0642D446270A02260095DAD4 /* UseCases */,
 				0642D4162709F9A50095DAD4 /* AppDelegate.swift */,
 				0642D4182709F9A50095DAD4 /* SceneDelegate.swift */,
@@ -132,8 +138,41 @@
 		0642D446270A02260095DAD4 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				0642D44D270A06800095DAD4 /* Entities */,
+				0642D44A270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0642D44C270A05340095DAD4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0642D44D270A06800095DAD4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0642D44E270A068D0095DAD4 /* Movie.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0642D450270A10BC0095DAD4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0642D451270A10CC0095DAD4 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0642D451270A10CC0095DAD4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0642D41B2709F9A50095DAD4 /* ViewController.swift in Sources */,
+				0642D44B270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift in Sources */,
+				0642D44F270A068D0095DAD4 /* Movie.swift in Sources */,
 				0642D4172709F9A50095DAD4 /* AppDelegate.swift in Sources */,
 				0642D4192709F9A50095DAD4 /* SceneDelegate.swift in Sources */,
 			);
