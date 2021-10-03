@@ -36,9 +36,11 @@ struct Resource<T: Decodable> {
 }
 
 extension Resource {
+
     static func details(movieId: Int) -> Resource<Movie> {
-        let url = URL(string: "")
+        let url = ApiConstants.baseUrl.appendingPathComponent("/movie/\(movieId)")
         let parameters: [String : CustomStringConvertible] = [
+            "api_key": ApiConstants.apiKey,
             "language": Locale.preferredLanguages[0]
             ]
         return Resource<Movie>(url: url, parameters: parameters)

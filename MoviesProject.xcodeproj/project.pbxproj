@@ -19,6 +19,7 @@
 		0642D44B270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D44A270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift */; };
 		0642D44F270A068D0095DAD4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D44E270A068D0095DAD4 /* Movie.swift */; };
 		0642D453270A12280095DAD4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */; };
+		0642D455270A1A720095DAD4 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D454270A1A720095DAD4 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		0642D44A270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCaseProtocol.swift; sourceTree = "<group>"; };
 		0642D44E270A068D0095DAD4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		0642D454270A1A720095DAD4 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */,
+				0642D454270A1A720095DAD4 /* APIConstants.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				0642D44B270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift in Sources */,
 				0642D44F270A068D0095DAD4 /* Movie.swift in Sources */,
 				0642D453270A12280095DAD4 /* NetworkServiceProtocol.swift in Sources */,
+				0642D455270A1A720095DAD4 /* APIConstants.swift in Sources */,
 				0642D4172709F9A50095DAD4 /* AppDelegate.swift in Sources */,
 				0642D449270A04AA0095DAD4 /* MoviesUseCase.swift in Sources */,
 				0642D4192709F9A50095DAD4 /* SceneDelegate.swift in Sources */,
