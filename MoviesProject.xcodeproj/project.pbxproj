@@ -20,6 +20,9 @@
 		0642D44F270A068D0095DAD4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D44E270A068D0095DAD4 /* Movie.swift */; };
 		0642D453270A12280095DAD4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */; };
 		0642D455270A1A720095DAD4 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D454270A1A720095DAD4 /* APIConstants.swift */; };
+		0642D45A270A2E440095DAD4 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D459270A2E440095DAD4 /* MovieDetailsViewModel.swift */; };
+		0642D45C270A2E4F0095DAD4 /* MovieDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D45B270A2E4F0095DAD4 /* MovieDetailsViewModelProtocol.swift */; };
+		0642D45E270A30320095DAD4 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D45D270A30320095DAD4 /* MovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		0642D44E270A068D0095DAD4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		0642D454270A1A720095DAD4 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		0642D459270A2E440095DAD4 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		0642D45B270A2E4F0095DAD4 /* MovieDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		0642D45D270A30320095DAD4 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		0642D4152709F9A50095DAD4 /* MoviesProject */ = {
 			isa = PBXGroup;
 			children = (
+				0642D457270A2E120095DAD4 /* Scenes */,
 				0642D450270A10BC0095DAD4 /* Services */,
 				0642D44C270A05340095DAD4 /* Utils */,
 				0642D446270A02260095DAD4 /* UseCases */,
@@ -181,6 +188,24 @@
 				0642D454270A1A720095DAD4 /* APIConstants.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0642D457270A2E120095DAD4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0642D458270A2E270095DAD4 /* Details */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0642D458270A2E270095DAD4 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				0642D459270A2E440095DAD4 /* MovieDetailsViewModel.swift */,
+				0642D45B270A2E4F0095DAD4 /* MovieDetailsViewModelProtocol.swift */,
+				0642D45D270A30320095DAD4 /* MovieViewModel.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0642D45C270A2E4F0095DAD4 /* MovieDetailsViewModelProtocol.swift in Sources */,
 				0642D41B2709F9A50095DAD4 /* ViewController.swift in Sources */,
 				0642D44B270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift in Sources */,
 				0642D44F270A068D0095DAD4 /* Movie.swift in Sources */,
@@ -341,7 +367,9 @@
 				0642D455270A1A720095DAD4 /* APIConstants.swift in Sources */,
 				0642D4172709F9A50095DAD4 /* AppDelegate.swift in Sources */,
 				0642D449270A04AA0095DAD4 /* MoviesUseCase.swift in Sources */,
+				0642D45E270A30320095DAD4 /* MovieViewModel.swift in Sources */,
 				0642D4192709F9A50095DAD4 /* SceneDelegate.swift in Sources */,
+				0642D45A270A2E440095DAD4 /* MovieDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
