@@ -15,8 +15,10 @@
 		0642D4232709F9A80095DAD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0642D4212709F9A80095DAD4 /* LaunchScreen.storyboard */; };
 		0642D42E2709F9A90095DAD4 /* MoviesProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D42D2709F9A90095DAD4 /* MoviesProjectTests.swift */; };
 		0642D4392709F9A90095DAD4 /* MoviesProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D4382709F9A90095DAD4 /* MoviesProjectUITests.swift */; };
+		0642D449270A04AA0095DAD4 /* MoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D448270A04AA0095DAD4 /* MoviesUseCase.swift */; };
 		0642D44B270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D44A270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift */; };
 		0642D44F270A068D0095DAD4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D44E270A068D0095DAD4 /* Movie.swift */; };
+		0642D453270A12280095DAD4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,10 @@
 		0642D4342709F9A90095DAD4 /* MoviesProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0642D4382709F9A90095DAD4 /* MoviesProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesProjectUITests.swift; sourceTree = "<group>"; };
 		0642D43A2709F9A90095DAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0642D448270A04AA0095DAD4 /* MoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCase.swift; sourceTree = "<group>"; };
 		0642D44A270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCaseProtocol.swift; sourceTree = "<group>"; };
 		0642D44E270A068D0095DAD4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 			children = (
 				0642D44D270A06800095DAD4 /* Entities */,
 				0642D44A270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift */,
+				0642D448270A04AA0095DAD4 /* MoviesUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -329,7 +334,9 @@
 				0642D41B2709F9A50095DAD4 /* ViewController.swift in Sources */,
 				0642D44B270A04CF0095DAD4 /* MoviesUseCaseProtocol.swift in Sources */,
 				0642D44F270A068D0095DAD4 /* Movie.swift in Sources */,
+				0642D453270A12280095DAD4 /* NetworkServiceProtocol.swift in Sources */,
 				0642D4172709F9A50095DAD4 /* AppDelegate.swift in Sources */,
+				0642D449270A04AA0095DAD4 /* MoviesUseCase.swift in Sources */,
 				0642D4192709F9A50095DAD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
