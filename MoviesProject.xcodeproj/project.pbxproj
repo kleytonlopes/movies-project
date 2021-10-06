@@ -65,6 +65,7 @@
 		0642D459270A2E440095DAD4 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 		0642D45B270A2E4F0095DAD4 /* MovieDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
 		0642D45D270A30320095DAD4 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		06D41CD1270E34D100879932 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +184,7 @@
 		0642D451270A10CC0095DAD4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				06D41CD1270E34D100879932 /* NetworkService.swift */,
 				0642D452270A12280095DAD4 /* NetworkServiceProtocol.swift */,
 				0642D454270A1A720095DAD4 /* APIConstants.swift */,
 			);
@@ -374,6 +376,7 @@
 				0642D449270A04AA0095DAD4 /* MoviesUseCase.swift in Sources */,
 				0642D45E270A30320095DAD4 /* MovieViewModel.swift in Sources */,
 				0642D4192709F9A50095DAD4 /* SceneDelegate.swift in Sources */,
+				06D41CD2270E34D100879932 /* NetworkService.swift in Sources */,
 				0642D45A270A2E440095DAD4 /* MovieDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
